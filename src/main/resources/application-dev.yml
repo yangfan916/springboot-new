@@ -1,0 +1,22 @@
+server:
+  port: 8800
+  servlet:
+    path: /dev
+#配置一些公共的信息
+resource:
+  imageServer: http://devimages.yangfan.com
+  emailServer: http://devemail.yangfan.com
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qf-learn?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    password: ~
+    username: root
+  thymeleaf:
+    cache: false
+mybatis:
+  mapper-locations: classpath:/com/yf/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+

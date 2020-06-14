@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  #设置对输出参数的格式化
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+  mvc:
+    date-format: yyyy-MM-dd

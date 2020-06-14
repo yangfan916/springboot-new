@@ -1,0 +1,8 @@
+server:
+  port: 8880
+  servlet:
+    path: /pro
+#配置一些公共的信息
+resource:
+  imageServer: http://proimages.yangfan.com
+  emailServer: http://proemail.yangfan.com

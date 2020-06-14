@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    模板页面！!<br/>
+    <span th:text="${name}">name</span>
+    <span th:text="超级VIP + ${name}">name</span>
+    <span th:text="|超级VIP,${name}|">name</span>
+    <br>
+    <span th:if="${age>33}">老油条</span>
+    <span th:unless="${age>33}" th:text="小鲜肉"></span>
+    <br>
+    <table>
+        <th>
+            <td>ID</td>
+            <td>name</td>
+        </th>
+        <tr th:each="user : ${list}">
+            <td th:text="${user.id}">ID</td>
+            <td th:text="${user.name}">name</td>
+        </tr>
+    </table>
+    <br>
+    <input th:value="${#dates.format(now, 'yyyy-MM-dd HH:mm:ss')}"/>
+
+</body>
+</html>

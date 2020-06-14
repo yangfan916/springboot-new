@@ -1,0 +1,12 @@
+server.port=8888
+server.servlet.path=/new
+#设置对输出参数的格式化
+spring.jackson.date-format=yyyy-MM-dd
+spring.jackson.time-zone=GMT+8
+
+#设置输入参数的格式化，这样后台的接口就可以接收Date类型
+spring.mvc.date-format=yyyy-MM-dd
+
+#配置一些公共的信息
+resource.imageServer=http://images.yangfan.com
+resource.emailServer=http://email.yangfan.com
